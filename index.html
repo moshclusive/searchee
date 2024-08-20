@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchee</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for the icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="img.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Searchee</h1>
+        <form id="search-form">
+            <div class="search-bar">
+                <input type="text" id="search-query" placeholder="Search..." required>
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="search-options">
+                <button type="button" class="search-option active" data-type="all">All</button>
+                <button type="button" class="search-option" data-type="images">Images</button>
+                <button type="button" class="search-option" data-type="videos">Videos</button>
+            </div>
+            <div class="category-filter">
+                <select id="category-select">
+                    <option value="" enabled selected>Default</option>
+                    <option value="course">Course</option>
+                    <option value="font">Font</option>
+                    <option value="png">PNG</option>
+                    <option value="gfx">GFX</option>
+                </select>
+            </div>
+            <div class="search-engines">
+                <button type="button" class="search-engine active" data-engine="google">
+                    <img src="https://www.google.com/favicon.ico" alt="Google" width="16" height="16">
+                </button>
+                <button type="button" class="search-engine" data-engine="duckduckgo">
+                    <img src="https://duckduckgo.com/favicon.ico" alt="DuckDuckGo" width="16" height="16">
+                </button>
+                <button type="button" class="search-engine" data-engine="bing">
+                    <img src="https://www.bing.com/sa/simg/favicon-2x.ico" alt="Bing" width="16" height="16">
+                </button>
+                <button type="button" class="search-engine" data-engine="yandex">
+                    <img src="https://yandex.com/favicon.ico" alt="Yandex" width="16" height="16">
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
